@@ -3,15 +3,15 @@ class FindYourGame::Genre
   
     def self.all
       # returns a bunch of different genres
-      puts <<-DOC
-      1. Action
-      2. Action-Adventure
-      3. Battle Royale
-      4. Role-playing
-      5. Simulation
-      6. Strategy
-      7. Sports
-      DOC
+    #   puts <<-DOC
+    #   1. Action
+    #   2. Action-Adventure
+    #   3. Battle Royale
+    #   4. Role-playing
+    #   5. Simulation
+    #   6. Strategy
+    #   7. Sports
+    #   DOC
       genre_1 = self.new
       genre_1.name = "Action"
       genre_1.game = "Red Dead Redemption 2"
