@@ -18,7 +18,7 @@ class FindYourGame::Game
 
       game = self.new
       game.name = doc.search("h3.body-h3").first.text
-      game.platform = doc.search("a.product-btn-link").first.text
+      game.platform = doc.search("div.standard-body").first.text
       game
     end
   end
