@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+
+require './lib/find-your-game' # This is loading my main lib
+
+FindYourGame::CLI.new.call

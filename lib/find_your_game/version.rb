@@ -1,0 +1,4 @@
+module FindYourGame
+    VERSION = "0.1.0"
+  end
+  
