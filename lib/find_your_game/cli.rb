@@ -2,33 +2,35 @@
 class FindYourGame::CLI
 
     def call
-      list_genres
+      list_games
       menu
       goodbye
     end
   
-    def list_genres
+    def list_games
       puts "Let's Find Your Game:"
-      @genres = FindYourGame::Genre.all
+      @games = FindYourGame::Game.all
+      @games.each.with_index(1) do |game, i|
+        puts "#{i}. #{game.name}"
+      end
+
     end
   
     def menu
       input = nil
       while input != "exit"
-        puts "Enter the number of the genre to get a list of games in that genre or list to see the genres again or type exit"
+        puts "Enter the number of the game to get more info or type list to see the games again or type exit"
         input = gets.strip.downcase
-        case input
-        when "0"
-          puts "The best game to get started on is Minecraft. It gets you an understanding on how videogames work. It is also very fun to play with friends or by yourself."
-        when "1"
-          puts "Lists out the games based on genre 1"
-        when "2"
-          puts "Lists out the games based on genre 2"
-        when "list"
-          list_genres
+
+        if input.to_i > 0
+          the_game = @games[input.to_i-1]
+          puts "#{the_game.name} - #{the_game.platform} -"
+        elsif input == "list"
+          list_games
         else
-          puts "Please put the number related to the genre, if you are a new gamer put 0"
+          puts "Please put the number related to the game or type exit. If you are a new gamer put 0"
         end
+
       end # Program will not end until you type exit.
     end
   
