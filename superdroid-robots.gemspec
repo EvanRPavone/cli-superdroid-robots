@@ -1,22 +1,22 @@
-require_relative 'lib/find_your_game/version'
+require_relative 'lib/superdroid-robots/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "find_your_game"
-  spec.version       = FindYourGame::VERSION
+  spec.version       = SuperDroidRobots::VERSION
   spec.authors       = ["Evan Pavone"]
   spec.email         = ["evanrpavone@gmail.com"]
 
   spec.summary       = "Summary"
-  spec.description   = "Gives you the best game to play."
-  spec.homepage      = "https://github.com/EvanRPavone/cli_find_your_game"
+  spec.description   = "Gives you the info about superdroid robots new robots"
+  spec.homepage      = "https://github.com/EvanRPavone/cli-superdroid-robots"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/EvanRPavone/cli_find_your_game"
-  spec.metadata["changelog_uri"] = "https://github.com/EvanRPavone/cli_find_your_game"
+  spec.metadata["source_code_uri"] = "https://github.com/EvanRPavone/cli-superdroid-robot"
+  spec.metadata["changelog_uri"] = "https://github.com/EvanRPavone/cli-superdroid-robot"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
