@@ -39,8 +39,6 @@ class SuperDroidRobots::CLI
           puts " - "
         elsif input == "list" #If I put list it will then give me the list of robots from list_robots again
           list_robots
-        elsif input == "exit" #if I put exit it will exit the program and tell you goodbye
-          puts "Hope you found what you are looking for!"
         else #if I put in a random input it will tell me to put a number associated to a robot, or put list, or exit
           puts "Did not understand. Please put the number related to the robot, type list to see the list again or type exit."
         end
