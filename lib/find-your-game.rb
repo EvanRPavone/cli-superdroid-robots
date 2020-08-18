@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
 
-require_relative "./find_your_game/version"
-require_relative "./find_your_game/game"
-require_relative './find_your_game/cli'
+require_relative "./superdroid-robots/version"
+require_relative "./superdroid-robots/game"
+require_relative './superdroid-robots/cli'
