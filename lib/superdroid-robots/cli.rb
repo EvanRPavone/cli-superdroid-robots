@@ -9,9 +9,12 @@ class SuperDroidRobots::CLI
   
     def list_robots
       puts "Let's Take a Look at Superdroid Robots:"
-      @robots = SuperDroidRobots::Game.all
+      @robots = SuperDroidRobots::Robots.all
       @robots.each.with_index(1) do |robot, i|
-        puts "#{i}. #{robot.name}"
+        puts "#{i}. "
+        puts " - #{robot.category} -".strip
+        puts "#{robot.name}".strip
+        puts "--------------"
       end
 
     end
@@ -24,7 +27,16 @@ class SuperDroidRobots::CLI
 
         if input.to_i > 0
           the_robot = @robots[input.to_i-1]
-          puts "#{the_robot.name} - #{the_robot.size} -"
+          puts "#{the_robot.name}".strip
+          puts " - "
+          puts "#{the_robot.availability}".strip
+          puts " - "
+          puts "#{the_robot.price}".strip
+          puts " - "
+          puts "#{the_robot.desc}".strip
+          puts " - "
+          puts "#{the_robot.url}".strip
+          puts " - "
         elsif input == "list"
           list_robots
         else
