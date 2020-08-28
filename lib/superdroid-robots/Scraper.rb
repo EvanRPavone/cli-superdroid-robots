@@ -23,7 +23,6 @@ class SuperDroidRobots::Scraper
         doc = Nokogiri::HTML(open(robot.link))
         name = doc.search("div.listname").first.text
         desc = doc.search("div.listdesc").first.text
-        # binding.pry
         price = doc.css(".listprice").first.text
         url = doc.search("div.listname a").first.attr("href")
         SuperDroidRobots::Robot.new(name, price, desc, url)
