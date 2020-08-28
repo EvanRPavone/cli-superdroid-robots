@@ -4,13 +4,7 @@ This program gives the user a way of seeing the new robots that superdroid has b
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'superdroid-robots'
-```
-
-And then execute:
+execute:
 
     $ bundle install
 

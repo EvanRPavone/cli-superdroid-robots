@@ -4,3 +4,5 @@ require "bundler/setup"
 require "superdroid-robots"
 
 SuperDroidRobots::CLI.new.call #calls cli.rb method call
+
+# this is the file your run in order to run the program.
