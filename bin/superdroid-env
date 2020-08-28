@@ -4,5 +4,6 @@ require "bundler/setup"
 require "superdroid-robots"
 
 SuperDroidRobots::CLI.new.call #calls cli.rb method call
+# SuperDroidRobots::Scraper.scrape_category
 
 # this is the file your run in order to run the program.
